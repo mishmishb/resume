@@ -103,14 +103,14 @@ const ProjectsAchievementsSection = () => {
 
         {/* Achievements */}
         <div>
-          {/* Use secondary color for Achievements subheading */}
-          <h3 className="font-display text-2xl font-semibold text-secondary dark:text-secondary-light mb-8 text-center sm:text-left">Achievements</h3>
+          {/* Use primary color for Achievements subheading */}
+          <h3 className="font-display text-2xl font-semibold text-primary dark:text-secondary-light mb-8 text-center sm:text-left">Achievements</h3>
           <div className="space-y-6">
             {achievementData.map((achievement, index) => (
                // Use background colors
                <div key={`achievement-${index}`} className="bg-white dark:bg-gray-700/50 border border-gray-200 dark:border-gray-600 p-6 rounded-lg shadow-sm transition-colors duration-500"> {/* Use white bg */}
-                 {/* Use secondary color for achievement titles */}
-                 <h4 className="font-display text-xl font-semibold text-secondary dark:text-secondary-light mb-2">{achievement.title}</h4>
+                 {/* Use primary color for achievement titles */}
+                 <h4 className="font-display text-xl font-semibold text-primary dark:text-primary-light mb-2">{achievement.title}</h4>
                  <p className="text-foreground/80 dark:text-foreground-dark/80 leading-relaxed">{achievement.description}</p>
                </div>
             ))}
