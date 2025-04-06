@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add any global base styles here if needed */
+/* Base body styles can go here if needed */
+body {
+  /* Add smooth, slower color transition */
+  @apply transition-colors duration-500 ease-in-out;
+}
+
+/* Ensure html and body take full height for layout purposes */
+html, body {
+  height: 100%;
+}

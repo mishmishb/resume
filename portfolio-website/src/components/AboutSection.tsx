@@ -1,0 +1,47 @@
+import React from 'react';
+
+const AboutSection = () => {
+  return (
+    <section id="about" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 bg-background dark:bg-background-dark transition-colors duration-500">
+      <div className="container mx-auto max-w-4xl">
+        <h2 className="font-display text-3xl sm:text-4xl font-bold text-center text-secondary dark:text-secondary-light mb-8 sm:mb-12">
+          About Me
+        </h2>
+        <div className="text-base sm:text-lg text-foreground/90 dark:text-foreground-dark/90 space-y-6 leading-relaxed">
+          <p>
+            I am a DevOps Engineer with over 7 years of experience focused on delivering robust automation solutions and enhancing system reliability. I have been a key figure in complex projects, including introducing mTLS certification across server infrastructure using self-developed Python software and transitioning package building pipelines from Jenkins to GitLab CI for improved performance and visibility.
+          </p>
+          <p>
+            My background includes automating server error handling with StackStorm, significantly reducing support staff alerts, and leading the development of performance testing frameworks. I thrive on solving problems, automating processes ("automate everything" perspective), and contributing effectively within both solo and large team projects using Agile methodologies.
+          </p>
+          <p>
+            I possess strong communication skills, am self-motivated, task-oriented, and always open to constructive criticism. My goal is to leverage my extensive experience to enhance system efficiency, accelerate development cycles, or contribute to scaling backend services.
+          </p>
+        </div>
+
+        {/* Sub-sections for Interests and Languages */}
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          <div>
+            <h3 className="text-xl sm:text-2xl font-semibold text-foreground dark:text-foreground-dark mb-4">Interests</h3>
+            <ul className="list-disc list-inside text-foreground/80 dark:text-foreground-dark/80 space-y-2">
+              <li>Managing a home server (Proxmox, VMs for media, DNS ad-blocking, game servers).</li>
+              <li>Monitoring home server with Grafana & Telegram alerts.</li>
+              <li>Exploring new technologies and home automation.</li>
+              <li>Socialising, video games, reading, cycling, and traveling.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl sm:text-2xl font-semibold text-foreground dark:text-foreground-dark mb-4">Languages</h3>
+            <ul className="list-disc list-inside text-foreground/80 dark:text-foreground-dark/80 space-y-2">
+              <li>English (Native proficiency)</li>
+              <li>German (Working proficiency)</li> {/* Adjusted based on resume */}
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default AboutSection;
