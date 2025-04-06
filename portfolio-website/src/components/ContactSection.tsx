@@ -23,7 +23,6 @@ const LinkedInIcon = () => (
 
 const ContactSection = () => {
   const email = "mbennett156@gmail.com";
-  const phone = "+491727065406"; // Consider if you want this publicly visible
   const linkedInUrl = "https://linkedin.com/in/michael-a-bennett";
 
   return (
@@ -45,17 +44,6 @@ const ContactSection = () => {
             <MailIcon />
             {email}
           </a>
-
-          {/* Phone (Optional) */}
-          {phone && (
-             <a
-                href={`tel:${phone.replace(/\s+/g, '')}`} // Remove spaces for tel link
-                className="inline-flex items-center text-lg text-primary hover:underline hover:underline-offset-4 transition-all"
-             >
-                <PhoneIcon />
-                {phone}
-             </a>
-          )}
 
           {/* LinkedIn */}
           <a
