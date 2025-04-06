@@ -104,7 +104,7 @@ const ProjectsAchievementsSection = () => {
         {/* Achievements */}
         <div>
           {/* Use primary color for Achievements subheading */}
-          <h3 className="font-display text-2xl font-semibold text-primary dark:text-secondary-light mb-8 text-center sm:text-left">Achievements</h3>
+          <h3 className="font-display text-2xl font-semibold text-primary dark:text-primary-light mb-8 text-center sm:text-left">Achievements</h3>
           <div className="space-y-6">
             {achievementData.map((achievement, index) => (
                // Use background colors
