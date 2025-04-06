@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar"; // Import Navbar
 import Footer from "@/components/Footer"; // Import Footer
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next"; // Import SpeedInsights
+import { Analytics } from "@vercel/analytics/react"; // Import Analytics
 
 // Configure Inter font
 const inter = Inter({
