@@ -3,8 +3,8 @@ import React from 'react';
 const AboutSection = () => {
   return (
     <section id="about" className="relative py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden transition-colors duration-500">
-      <div className="absolute inset-0 z-0 bg-gradient-to-br from-purple-500/30 via-pink-400/20 to-blue-400/30 dark:from-purple-800/30 dark:via-pink-700/20 dark:to-blue-700/30 backdrop-blur-xl rounded-3xl border border-white/20 ring-1 ring-white/10"></div>
-      <div className="relative z-10 container mx-auto max-w-4xl p-8 rounded-3xl bg-gradient-to-br from-white/20 via-white/10 to-white/20 dark:from-black/20 dark:via-black/10 dark:to-black/20 backdrop-blur-xl border border-white/20 ring-1 ring-white/10 shadow-2xl">
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-purple-500/30 via-pink-400/20 to-blue-400/30 dark:from-purple-800/30 dark:via-pink-700/20 dark:to-blue-700/30 backdrop-blur-xl rounded-none border border-white/20 ring-1 ring-white/10"></div>
+      <div className="relative z-10 container mx-auto max-w-4xl p-8 rounded-none bg-gradient-to-br from-white/20 via-white/10 to-white/20 dark:from-black/20 dark:via-black/10 dark:to-black/20 backdrop-blur-xl border border-white/20 ring-1 ring-white/10 shadow-2xl">
       <div className="container mx-auto max-w-4xl">
         <h2 className="font-display text-3xl sm:text-4xl font-bold text-center text-secondary dark:text-secondary-light mb-8 sm:mb-12">
           About Me

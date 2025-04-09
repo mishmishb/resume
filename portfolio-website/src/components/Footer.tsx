@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-background/30 dark:bg-background-dark/30 backdrop-blur-sm text-foreground/70 dark:text-foreground-dark/70 py-6 mt-auto border-t border-white/10 transition-colors duration-500">
+    <footer className="relative overflow-hidden bg-gradient-to-br from-purple-500/30 via-pink-400/20 to-blue-400/30 dark:from-purple-800/30 dark:via-pink-700/20 dark:to-blue-700/30 backdrop-blur-xl text-foreground/70 dark:text-foreground-dark/70 py-6 mt-auto border-t border-white/20 ring-1 ring-white/10 shadow-2xl transition-colors duration-500">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="flex justify-center space-x-6 mb-4">
           {/* LinkedIn Link */}
