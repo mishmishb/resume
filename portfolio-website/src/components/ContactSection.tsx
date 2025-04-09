@@ -27,8 +27,8 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="relative py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden transition-colors duration-500">
-      <div className="absolute inset-0 z-0 bg-gradient-to-br from-purple-500/30 via-pink-400/20 to-blue-400/30 dark:from-purple-800/30 dark:via-pink-700/20 dark:to-blue-700/30 backdrop-blur-xl border-none ring-0"></div>
-      <div className="relative z-10 container mx-auto max-w-4xl p-8 rounded-none bg-gradient-to-br from-white/20 via-white/10 to-white/20 dark:from-black/20 dark:via-black/10 dark:to-black/20 backdrop-blur-xl border border-white/20 ring-1 ring-white/10 shadow-2xl">
+      {/* Removed per-section gradient overlay for seamless fixed background */}
+      <div className="relative z-10 container mx-auto max-w-4xl p-8 rounded-2xl bg-white/20 dark:bg-black/20 backdrop-blur-xl border border-white/20 ring-1 ring-white/10 shadow-2xl">
       <div className="container mx-auto max-w-3xl text-center">
         <h2 className="font-display text-3xl sm:text-4xl font-bold text-secondary dark:text-secondary-light mb-6">
           Get In Touch
