@@ -8,8 +8,10 @@ body {
   /* Add smooth, slower color transition */
   @apply transition-colors duration-500 ease-in-out;
 
-  /* Fixed vibrant gradient background */
-  background: linear-gradient(135deg, rgba(128,0,255,0.3), rgba(255,0,128,0.2), rgba(0,128,255,0.3));
+  /* Match HeroSection background image and gradient overlay */
+  background-image:
+    linear-gradient(to bottom right, rgba(128,0,255,0.3), rgba(255,0,128,0.2), rgba(0,128,255,0.3)),
+    url('/placeholder-abstract-bg.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
