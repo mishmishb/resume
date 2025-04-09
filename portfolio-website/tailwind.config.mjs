@@ -10,9 +10,9 @@ const config = {
     extend: {
       colors: {
         primary: {
-          light: '#9999FF', // Lighter shade for dark mode text
-          DEFAULT: '#7F7EFF', // Your requested primary color
-          dark: '#6A6AFF',   // Darker shade for hover states
+          light: '#7F7EFF', // Preferred lighter purple
+          DEFAULT: '#7F7EFF', // Preferred lighter purple
+          dark: '#7F7EFF',   // Preferred lighter purple
         },
         secondary: {
           light: '#4A3BAA', // Lighter purple
