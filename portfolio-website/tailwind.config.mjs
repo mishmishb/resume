@@ -15,9 +15,9 @@ const config = {
           dark: '#6A6AFF',   // Darker shade for hover states
         },
         secondary: {
-          light: '#4A3BAA', // Lighter shade for dark mode text
-          DEFAULT: '#27187E', // Your requested secondary color
-          dark: '#1F1365',   // Darker shade for hover states
+          light: '#4A3BAA', // Lighter purple
+          DEFAULT: '#4A3BAA', // Use lighter purple everywhere
+          dark: '#4A3BAA',   // Use lighter purple everywhere
         },
         background: {
           light: '#FFFFFF', // Reverted to white
