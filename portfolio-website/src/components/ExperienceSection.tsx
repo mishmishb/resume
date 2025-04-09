@@ -16,12 +16,12 @@ const experienceData: ExperienceItem[] = [
     company: "IONOS SE",
     duration: "September 2021 – Present",
     points: [
-      "Analysed OS issues to resolve server instability, enhancing system reliability.",
-      "Led introduction of mTLS certification using self-developed Python-based certificate lifecycle management software for 1000s of production servers daily.",
-      "Contributed to securing IT-Grundschutz certificate from the German government.",
-      "Overhauled package building pipelines, transitioning from Jenkins to GitLab CI, improving performance and visibility.",
-      "Implemented StackStorm to automate server error response, handling dozens of alerts daily and reducing support staff load.",
-      "Acted as primary contact for GitLab CI inquiries, improving pipeline efficiency for multiple teams."
+      "Resolved OS issues, enhancing system reliability.",
+      "**Automated mTLS certificate lifecycle** for thousands of servers daily.",
+      "**Secured IT-Grundschutz certification** from the German government.",
+      "**Migrated CI/CD pipelines** from Jenkins to GitLab CI, improving performance and visibility.",
+      "**Automated server error response** with StackStorm, reducing support load.",
+      "Primary contact for GitLab CI, improving pipeline efficiency across teams."
     ]
   },
   {
@@ -29,10 +29,10 @@ const experienceData: ExperienceItem[] = [
     company: "Hewlett Packard Enterprise",
     duration: "March 2020 – July 2021",
     points: [
-      "Led 6-month project developing a testing automation framework (Jenkins, MySQL, Grafana), streamlining performance testing.",
-      "Framework orchestrated complex configurations, collected key metrics (performance, bottlenecks).",
-      "Transitioned to full software engineering team (HPE Nimble), delivering test-driven features and bug fixes.",
-      "Mentored interns, served as STEM Ambassador, presented new technologies."
+      "Developed a testing automation framework (Jenkins, MySQL, Grafana), streamlining performance testing.",
+      "Orchestrated complex configurations and collected key performance metrics.",
+      "Delivered test-driven features and bug fixes for HPE Nimble.",
+      "Mentored interns, served as STEM Ambassador, and presented new technologies."
     ]
   },
   {
@@ -41,11 +41,11 @@ const experienceData: ExperienceItem[] = [
     duration: "Jul 2017 – March 2020",
     points: [
       "Managed and maintained HPE servers and storage.",
-      "Developed proficiency in Bash scripting and Unix system administration.",
+      "Developed Bash scripting and Unix system administration skills.",
       "Fostered collaborative work relationships.",
-      "Automated log synchronization and other tasks via scripting.",
-      "Created Python program for data mining/pattern analysis, discovering root causes of OS issues (earned Intern of the Year award).",
-      "Established reputation for reliability and helpfulness."
+      "Automated log synchronization and routine tasks.",
+      "**Created Python tool for root cause analysis**, earning Intern of the Year award.",
+      "Recognized for reliability and helpfulness."
     ]
   }
 ];
@@ -78,9 +78,36 @@ const ExperienceSection = () => {
               )}
               <h3 className="text-xl sm:text-2xl font-semibold text-foreground dark:text-foreground-dark mb-1">{item.role}</h3>
               <p className="text-lg font-medium text-foreground/80 dark:text-foreground-dark/80 mb-3">{item.company}</p>
-              <ul className="list-disc list-outside pl-5 space-y-2 text-base text-foreground/90 dark:text-foreground-dark/90 leading-relaxed">
+              <ul className="space-y-3 text-base text-foreground/90 dark:text-foreground-dark/90 leading-relaxed">
                 {item.points.map((point, pIndex) => (
-                  <li key={pIndex}>{point}</li>
+                  <li key={pIndex} className="flex items-start gap-2">
+                    <span className="inline-flex items-center text-primary">✓</span>
+                    <span>
+                      {point.includes("mTLS") ? (
+                        <>
+                          Automated <span className="inline-flex items-center bg-primary/20 text-primary px-2 rounded-full font-semibold mr-1 text-base">mTLS Certificate Lifecycle</span> for thousands of servers daily.
+                        </>
+                      ) : point.includes("IT-Grundschutz") ? (
+                        <>
+                          Secured <span className="inline-flex items-center bg-primary/20 text-primary px-2 rounded-full font-semibold mr-1 text-base">IT-Grundschutz Certification</span> from the German government.
+                        </>
+                      ) : point.includes("CI/CD") ? (
+                        <>
+                          Migrated <span className="inline-flex items-center bg-primary/20 text-primary px-2 rounded-full font-semibold mr-1 text-base">CI/CD Pipelines</span> from Jenkins to GitLab CI, improving performance and visibility.
+                        </>
+                      ) : point.includes("server error response") ? (
+                        <>
+                          Automated <span className="inline-flex items-center bg-primary/20 text-primary px-2 rounded-full font-semibold mr-1 text-base">Server Error Response</span> with StackStorm, reducing support load.
+                        </>
+                      ) : point.includes("Python tool") ? (
+                        <>
+                          Created <span className="inline-flex items-center bg-primary/20 text-primary px-2 rounded-full font-semibold mr-1 text-base">Python Tool</span> for root cause analysis, earning Intern of the Year award.
+                        </>
+                      ) : (
+                        point
+                      )}
+                    </span>
+                  </li>
                 ))}
               </ul>
             </div>

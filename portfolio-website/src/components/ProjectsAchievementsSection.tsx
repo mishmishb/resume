@@ -37,7 +37,7 @@ const projectData: ProjectItem[] = [
   },
   {
     title: "OS Issue Root Cause Analysis Tool",
-    description: "Created a Python program for data mining and pattern analysis, successfully identifying root causes for several long-standing OS issues, significantly improving system stability.",
+    description: "Created a Python tool for data mining and pattern analysis, identifying root causes of OS issues and improving system stability.",
     tags: ["Python", "Data Mining", "Problem Solving", "System Stability"]
   }
 ];
@@ -110,8 +110,7 @@ const ProjectsAchievementsSection = () => {
           <div className="space-y-6">
             {achievementData.map((achievement, index) => (
                // Use background colors
-               <div key={`achievement-${index}`} className="p-6 rounded-lg shadow-sm bg-background/30 dark:bg-background-dark/30 backdrop-blur-sm border border-white/10 transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg"> {/* Applied glassmorphism */}
-                 {/* Use primary color for achievement titles */}
+               <div key={`achievement-${index}`} className="p-6 rounded-lg shadow-md bg-white/10 dark:bg-black/10 backdrop-blur-xl border border-white/20 ring-1 ring-white/10 transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg">
                  <h4 className="font-display text-xl font-semibold text-primary dark:text-primary-light mb-2">{achievement.title}</h4>
                  <p className="text-foreground/80 dark:text-foreground-dark/80 leading-relaxed">{achievement.description}</p>
                </div>
