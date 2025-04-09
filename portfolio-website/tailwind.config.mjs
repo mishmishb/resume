@@ -14,11 +14,6 @@ const config = {
           DEFAULT: '#7F7EFF', // Preferred lighter purple
           dark: '#7F7EFF',   // Preferred lighter purple
         },
-        secondary: {
-          light: '#4A3BAA', // Lighter purple
-          DEFAULT: '#4A3BAA', // Use lighter purple everywhere
-          dark: '#4A3BAA',   // Use lighter purple everywhere
-        },
         background: {
           light: '#FFFFFF', // Reverted to white
           DEFAULT: '#FFFFFF', // Reverted to white

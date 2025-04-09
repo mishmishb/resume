@@ -63,7 +63,7 @@ const ExperienceSection = () => {
     <section ref={sectionRef} id="experience" className="relative py-16 sm:py-20 md:py-24 overflow-hidden transition-colors duration-500">
       {/* Removed per-section gradient overlay for seamless fixed background */}
       <div className="relative z-10 container mx-auto max-w-4xl p-8 rounded-2xl bg-white/20 dark:bg-black/20 backdrop-blur-xl border border-white/20 ring-1 ring-white/10 shadow-2xl">
-        <h2 className="font-display text-3xl sm:text-4xl font-bold text-center text-secondary dark:text-secondary-light mb-12 sm:mb-16">
+        <h2 className="font-display text-3xl sm:text-4xl font-bold text-center text-primary dark:text-primary-light mb-12 sm:mb-16">
           Work Experience
         </h2>
       <motion.div style={{ y }} className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
@@ -72,7 +72,7 @@ const ExperienceSection = () => {
             <div key={index} className="relative p-6 bg-background/30 dark:bg-background-dark/30 backdrop-blur-sm rounded-lg shadow-md border border-white/10 transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg">
               {/* Apply glassmorphism to each experience item card */}
               {/* Keep the timeline dot, adjust position due to padding and border color for contrast */}
-              <div className="absolute -left-[7px] top-8 w-3 h-3 bg-secondary dark:bg-secondary-light rounded-full border-2 border-white dark:border-gray-900 transition-colors duration-500"></div>
+              <div className="absolute -left-[7px] top-8 w-3 h-3 bg-primary dark:bg-primary-light rounded-full border-2 border-white dark:border-gray-900 transition-colors duration-500"></div>
               {item.duration && (
                 <p className="text-sm font-medium text-primary dark:text-primary-light mb-1">{item.duration}</p>
               )}

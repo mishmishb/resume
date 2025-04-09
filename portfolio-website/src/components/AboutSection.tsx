@@ -6,7 +6,7 @@ const AboutSection = () => {
       {/* Removed per-section gradient overlay for seamless fixed background */}
       <div className="relative z-10 container mx-auto max-w-4xl p-8 rounded-2xl bg-white/20 dark:bg-black/20 backdrop-blur-xl border border-white/20 ring-1 ring-white/10 shadow-2xl">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="font-display text-3xl sm:text-4xl font-bold text-center text-secondary dark:text-secondary-light mb-8 sm:mb-12">
+        <h2 className="font-display text-3xl sm:text-4xl font-bold text-center text-primary dark:text-primary-light mb-8 sm:mb-12">
           About Me
         </h2>
         <div className="text-base sm:text-lg text-foreground/90 dark:text-foreground-dark/90 space-y-6 leading-relaxed">
