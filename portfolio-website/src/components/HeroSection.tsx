@@ -10,10 +10,7 @@ const HeroSection = () => {
     <section
       id="hero"
       className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 overflow-hidden bg-cover bg-center"
-      style={{ backgroundImage: "url('/placeholder-abstract-bg.jpg')" }}
     >
-      {/* Gradient overlay for vibrant glassmorphism */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-br from-purple-500/30 via-pink-400/20 to-blue-400/30 dark:from-purple-800/30 dark:via-pink-700/20 dark:to-blue-700/30 backdrop-blur-3xl"></div>
 
       {/* ParticleBackground component removed */}
       {/* TODO: Replace with actual background image URL in /public or use Tailwind config */}
