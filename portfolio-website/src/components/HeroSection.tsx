@@ -66,14 +66,14 @@ const HeroSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             // Use primary color classes for button
-            className="inline-block bg-primary hover:bg-primary-dark text-white font-medium py-3 px-8 rounded-md shadow-sm transition-all duration-500 ease-in-out hover:scale-105 w-full sm:w-auto" // Increased duration
+            className="inline-block text-primary border border-primary font-medium py-3 px-8 rounded-md shadow-md transition-all duration-500 ease-in-out hover:scale-105 hover:bg-primary hover:text-white hover:shadow-lg w-full sm:w-auto"
           >
             View Resume (PDF)
           </Link>
           <Link
             href="#contact"
             // Added subtle border in light mode
-            className="inline-block bg-white hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 border border-gray-300 dark:border-gray-600 text-foreground dark:text-foreground-dark font-medium py-3 px-8 rounded-md shadow-sm transition-all duration-500 ease-in-out hover:scale-105 w-full sm:w-auto" // Use white bg, adjust hover/border
+            className="inline-block text-primary border border-primary font-medium py-3 px-8 rounded-md shadow-md transition-all duration-500 ease-in-out hover:scale-105 hover:bg-primary hover:text-white hover:shadow-lg w-full sm:w-auto"
           >
             Get In Touch
           </Link>
