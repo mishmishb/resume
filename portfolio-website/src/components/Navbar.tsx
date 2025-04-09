@@ -22,10 +22,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out backdrop-blur-md border-b border-white/10 ${ // Added blur and border
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out backdrop-blur-xl border-b border-white/30 ring-1 ring-white/20 ${ // Amplified glassmorphism
         scrolled
-          ? 'bg-background/70 dark:bg-background-dark/70 shadow-md' // Scrolled state: Semi-transparent background based on theme
-          : 'bg-white/10 dark:bg-black/10 shadow-none' // Initial state: More transparent, using generic colors for contrast potential
+          ? 'bg-gradient-to-br from-white/30 via-white/10 to-white/30 dark:from-black/30 dark:via-black/10 dark:to-black/30 shadow-md' // Scrolled state vibrant gradient
+          : 'bg-gradient-to-br from-white/20 via-white/5 to-white/20 dark:from-black/20 dark:via-black/5 dark:to-black/20 shadow-none' // Initial state vibrant gradient
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">

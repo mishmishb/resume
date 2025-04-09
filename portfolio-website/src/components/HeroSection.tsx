@@ -12,11 +12,14 @@ const HeroSection = () => {
       className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 overflow-hidden bg-cover bg-center"
       style={{ backgroundImage: "url('/placeholder-abstract-bg.jpg')" }}
     >
+      {/* Gradient overlay for vibrant glassmorphism */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-purple-500/30 via-pink-400/20 to-blue-400/30 dark:from-purple-800/30 dark:via-pink-700/20 dark:to-blue-700/30 backdrop-blur-3xl"></div>
+
       {/* ParticleBackground component removed */}
       {/* TODO: Replace with actual background image URL in /public or use Tailwind config */}
       {/* Wrap content in motion.div for staggering */}
       <motion.div
-        className="max-w-4xl py-16 z-10 bg-background/30 dark:bg-background-dark/30 backdrop-blur-md rounded-xl shadow-lg border border-white/10 p-8" // Added glassmorphism & padding
+        className="max-w-4xl py-16 z-10 bg-gradient-to-br from-white/20 via-white/10 to-white/20 dark:from-black/20 dark:via-black/10 dark:to-black/20 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/30 p-8 ring-1 ring-white/20" // Amplified glassmorphism
         initial="hidden"
         animate="visible"
         variants={{
