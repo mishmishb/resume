@@ -5,7 +5,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-100 dark:bg-gray-800 text-foreground/70 dark:text-foreground-dark/70 py-6 mt-auto transition-colors duration-500"> {/* Lighter gray for light mode */}
+    {/* Apply glassmorphism to the footer */}
+    <footer className="bg-background/30 dark:bg-background-dark/30 backdrop-blur-sm text-foreground/70 dark:text-foreground-dark/70 py-6 mt-auto border-t border-white/10 transition-colors duration-500">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="flex justify-center space-x-6 mb-4">
           {/* LinkedIn Link */}

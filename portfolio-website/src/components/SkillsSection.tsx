@@ -26,7 +26,7 @@ const SkillsSection = () => {
           Skills
         </h2>
 
-        <div className="mb-12">
+        <div className="mb-12 p-6 bg-background/30 dark:bg-background-dark/30 backdrop-blur-sm rounded-lg shadow-md border border-white/10">
           <h3 className="font-display text-2xl font-semibold text-[#7F7EFF] dark:text-[#7F7EFF] mb-6 text-center sm:text-left">Technical Skills</h3>
           <div className="mb-6">
             <h4 className="text-lg font-semibold text-[#7F7EFF] dark:text-[#7F7EFF] mb-3">Primary</h4>
@@ -42,7 +42,7 @@ const SkillsSection = () => {
           </div>
         </div>
 
-        <div>
+        <div className="p-6 bg-background/30 dark:bg-background-dark/30 backdrop-blur-sm rounded-lg shadow-md border border-white/10">
           <h3 className="font-display text-2xl font-semibold text-[#7F7EFF] dark:text-[#7F7EFF] mb-6 text-center sm:text-left">Soft Skills</h3>
           <div className="flex flex-wrap justify-center sm:justify-start">
             {softSkills.map((skill, index) => <SkillTag key={`soft-${index}`} skill={skill} />)}

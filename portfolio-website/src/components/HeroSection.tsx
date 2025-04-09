@@ -3,15 +3,20 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion'; // Import motion
-import ParticleBackground from './ParticleBackground';
+// ParticleBackground import removed
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <ParticleBackground />
+    <section
+      id="hero"
+      className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 overflow-hidden bg-cover bg-center"
+      style={{ backgroundImage: "url('/placeholder-abstract-bg.jpg')" }}
+    >
+      {/* ParticleBackground component removed */}
+      {/* TODO: Replace with actual background image URL in /public or use Tailwind config */}
       {/* Wrap content in motion.div for staggering */}
       <motion.div
-        className="max-w-4xl py-16 z-10"
+        className="max-w-4xl py-16 z-10 bg-background/30 dark:bg-background-dark/30 backdrop-blur-md rounded-xl shadow-lg border border-white/10 p-8" // Added glassmorphism & padding
         initial="hidden"
         animate="visible"
         variants={{

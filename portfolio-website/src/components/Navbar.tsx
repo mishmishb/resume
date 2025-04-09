@@ -22,10 +22,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out backdrop-blur-md border-b border-white/10 ${ // Added blur and border
         scrolled
-          ? 'bg-white dark:bg-gray-900 shadow-md' // Scrolled state
-          : 'bg-transparent dark:bg-transparent shadow-none' // Initial transparent state
+          ? 'bg-background/70 dark:bg-background-dark/70 shadow-md' // Scrolled state: Semi-transparent background based on theme
+          : 'bg-white/10 dark:bg-black/10 shadow-none' // Initial state: More transparent, using generic colors for contrast potential
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">

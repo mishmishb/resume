@@ -80,7 +80,7 @@ const ProjectsAchievementsSection = () => {
               // Use background colors
               <motion.div
                 key={`project-${index}`}
-                className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md border border-gray-200 dark:border-gray-600 transition-colors duration-500" // Keep color transition, remove hover bg/shadow from here
+                className="p-6 rounded-lg shadow-md bg-background/30 dark:bg-background-dark/30 backdrop-blur-sm border border-white/10" // Applied glassmorphism
                 whileHover={{ scale: 1.03, boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)' }} // Add scale and shadow via motion
                 transition={{ type: 'spring', stiffness: 300, damping: 20 }} // Spring physics for hover
               >
@@ -108,7 +108,7 @@ const ProjectsAchievementsSection = () => {
           <div className="space-y-6">
             {achievementData.map((achievement, index) => (
                // Use background colors
-               <div key={`achievement-${index}`} className="bg-white dark:bg-gray-700/50 border border-gray-200 dark:border-gray-600 p-6 rounded-lg shadow-sm transition-colors duration-500"> {/* Use white bg */}
+               <div key={`achievement-${index}`} className="p-6 rounded-lg shadow-sm bg-background/30 dark:bg-background-dark/30 backdrop-blur-sm border border-white/10"> {/* Applied glassmorphism */}
                  {/* Use primary color for achievement titles */}
                  <h4 className="font-display text-xl font-semibold text-primary dark:text-primary-light mb-2">{achievement.title}</h4>
                  <p className="text-foreground/80 dark:text-foreground-dark/80 leading-relaxed">{achievement.description}</p>

@@ -35,7 +35,9 @@ const ContactSection = () => {
           Feel free to reach out if you'd like to discuss opportunities, projects, or just connect!
         </p>
 
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-10">
+        {/* Apply glassmorphism to the links container */}
+        <div className="inline-block p-6 bg-background/30 dark:bg-background-dark/30 backdrop-blur-sm rounded-lg shadow-md border border-white/10">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-10">
           {/* Email */}
           <a
             href={`mailto:${email}`}
@@ -55,6 +57,7 @@ const ContactSection = () => {
             <LinkedInIcon />
             LinkedIn Profile
           </a>
+          </div>
         </div>
 
       </div>

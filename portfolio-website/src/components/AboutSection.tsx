@@ -21,7 +21,7 @@ const AboutSection = () => {
 
         {/* Sub-sections for Interests and Languages */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-          <div>
+          <div className="p-6 bg-background/30 dark:bg-background-dark/30 backdrop-blur-sm rounded-lg shadow-md border border-white/10">
             <h3 className="text-xl sm:text-2xl font-semibold text-foreground dark:text-foreground-dark mb-4">Interests</h3>
             <ul className="list-disc list-inside text-foreground/80 dark:text-foreground-dark/80 space-y-2">
               <li>Managing a home server (Proxmox, VMs for media, DNS ad-blocking, game servers).</li>
@@ -30,7 +30,7 @@ const AboutSection = () => {
               <li>Socialising, video games, reading, cycling, and traveling.</li>
             </ul>
           </div>
-          <div>
+          <div className="p-6 bg-background/30 dark:bg-background-dark/30 backdrop-blur-sm rounded-lg shadow-md border border-white/10">
             <h3 className="text-xl sm:text-2xl font-semibold text-foreground dark:text-foreground-dark mb-4">Languages</h3>
             <ul className="list-disc list-inside text-foreground/80 dark:text-foreground-dark/80 space-y-2">
               <li>English (Native proficiency)</li>

@@ -67,8 +67,10 @@ const ExperienceSection = () => {
         </h2>
         <div className="space-y-10">
           {experienceData.map((item, index) => (
-            <div key={index} className="relative pl-6 sm:pl-10 border-l border-secondary/30 dark:border-secondary-light/30">
-              <div className="absolute -left-[7px] top-1 w-3 h-3 bg-secondary dark:bg-secondary-light rounded-full border-2 border-gray-50 dark:border-gray-800 transition-colors duration-500"></div>
+            <div key={index} className="relative p-6 bg-background/30 dark:bg-background-dark/30 backdrop-blur-sm rounded-lg shadow-md border border-white/10">
+              {/* Apply glassmorphism to each experience item card */}
+              {/* Keep the timeline dot, adjust position due to padding and border color for contrast */}
+              <div className="absolute -left-[7px] top-8 w-3 h-3 bg-secondary dark:bg-secondary-light rounded-full border-2 border-white dark:border-gray-900 transition-colors duration-500"></div>
               {item.duration && (
                 <p className="text-sm font-medium text-primary dark:text-primary-light mb-1">{item.duration}</p>
               )}
