@@ -38,7 +38,7 @@ const ContactSection = () => {
         </p>
 
         {/* Apply glassmorphism to the links container */}
-        <div className="inline-block p-6 bg-background/30 dark:bg-background-dark/30 backdrop-blur-sm rounded-lg shadow-md border border-white/10">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-10">
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-10">
           {/* Email */}
           <a
