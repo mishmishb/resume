@@ -43,7 +43,7 @@ const ContactSection = () => {
           {/* Email */}
           <a
             href={`mailto:${email}`}
-            className="inline-flex items-center text-lg text-primary hover:underline hover:underline-offset-4 transition-all"
+            className="inline-flex items-center justify-center text-lg text-primary font-medium py-3 px-6 rounded-md shadow-md border border-primary transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-primary hover:text-white"
           >
             <MailIcon />
             {email}
@@ -54,7 +54,7 @@ const ContactSection = () => {
             href={linkedInUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center text-lg text-primary hover:underline hover:underline-offset-4 transition-all"
+            className="inline-flex items-center justify-center text-lg text-primary font-medium py-3 px-6 rounded-md shadow-md border border-primary transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-primary hover:text-white"
           >
             <LinkedInIcon />
             LinkedIn Profile
