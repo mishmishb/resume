@@ -33,9 +33,9 @@ const Navbar = () => {
           {/* Logo/Name */}
           <div className="flex-shrink-0">
             {/* Dynamically change text color based on scroll */}
-            <Link href="/" className={`text-xl font-bold transition-colors ${scrolled ? 'text-gray-900 dark:text-white' : 'text-gray-900 dark:text-white'}`}> {/* Keep dark text on light, white on dark initially for simplicity, adjust if hero bg clashes */}
+            <a href="#" className={`text-xl font-bold transition-colors ${scrolled ? 'text-gray-900 dark:text-white' : 'text-gray-900 dark:text-white'}`}> {/* Keep dark text on light, white on dark initially for simplicity, adjust if hero bg clashes */}
               Michael Bennett
-            </Link>
+            </a>
           </div>
 
           {/* Navigation Links */}
