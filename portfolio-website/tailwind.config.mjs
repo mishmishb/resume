@@ -26,8 +26,8 @@ const config = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'sans-serif'], // Body font
-        display: ['var(--font-display)', 'sans-serif'], // Heading font
+        sans: ['var(--font-body)', 'sans-serif'], // Body font (Sora)
+        display: ['var(--font-display)', 'sans-serif'], // Heading font (Space Grotesk)
       },
       backgroundImage: {
         // Subtle radial gradient for hero/background interest

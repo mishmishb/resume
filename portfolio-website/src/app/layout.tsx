@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google"; // Import Poppins
+import { Space_Grotesk, Sora } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/layout/Navbar"; // Import Navbar
 import Footer from "@/components/layout/Footer"; // Import Footer
@@ -7,18 +7,20 @@ import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next"; // Import SpeedInsights
 import { Analytics } from "@vercel/analytics/react"; // Import Analytics
 
-// Configure Inter font
-const inter = Inter({
+// Configure Sora font for body text
+const sora = Sora({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ['400', '500'],
+  display: 'swap',
+  variable: '--font-body',
 });
 
-// Configure Poppins font for display headings
-const poppins = Poppins({
+// Configure Space Grotesk font for display headings
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  display: 'swap', // Ensure text remains visible during font load
-  weight: ['700', '800'], // Load bold and extrabold weights
-  variable: "--font-display", // Define CSS variable for display font
+  weight: ['700'],
+  display: 'swap',
+  variable: '--font-display',
 });
 
 export const metadata: Metadata = {
@@ -34,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${poppins.variable} font-sans antialiased bg-background dark:bg-background-dark text-foreground dark:text-foreground-dark`}
+        className={`${sora.variable} ${spaceGrotesk.variable} font-sans antialiased bg-background dark:bg-background-dark text-foreground dark:text-foreground-dark`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {/* Flex column layout to push footer down */}
