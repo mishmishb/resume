@@ -51,7 +51,7 @@ const HeroSection = () => {
                     variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
                     transition={{ duration: 0.5 }}
                 >
-                    7+ years delivering robust automation solutions and driving system reliability. Proven track record automating server error handling and leading performance testing frameworks.
+                    7+ years delivering robust automation solutions and driving system reliability. Proven track record automating server error handling and developing CI/CD pipelines.
                 </motion.p>
                 <motion.div
                     className="flex flex-col sm:flex-row justify-center items-center gap-5"
