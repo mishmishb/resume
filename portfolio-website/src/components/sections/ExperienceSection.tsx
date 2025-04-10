@@ -1,7 +1,6 @@
 'use client'; // Needed for framer-motion hooks
 
 import React from 'react';
-import { motion } from 'framer-motion';
 
 interface ExperienceItem {
     role: string;
@@ -78,23 +77,23 @@ const ExperienceSection = () => {
                                             <span>
                                                 {point.includes("mTLS") ? (
                                                     <>
-                                                        Automated <span className="inline-flex items-center bg-primary/20 text-primary px-2 rounded-full font-semibold mr-1 text-base">mTLS Certificate Lifecycle</span> for thousands of servers daily.
+                                                        Automated mTLS Certificate Lifecycle for thousands of servers daily.
                                                     </>
                                                 ) : point.includes("IT-Grundschutz") ? (
                                                     <>
-                                                        Secured <span className="inline-flex items-center bg-primary/20 text-primary px-2 rounded-full font-semibold mr-1 text-base">IT-Grundschutz Certification</span> from the German government.
+                                                        Secured IT-Grundschutz Certification from the German government.
                                                     </>
                                                 ) : point.includes("CI/CD") ? (
                                                     <>
-                                                        Migrated <span className="inline-flex items-center bg-primary/20 text-primary px-2 rounded-full font-semibold mr-1 text-base">CI/CD Pipelines</span> from Jenkins to GitLab CI, improving performance and visibility.
+                                                        Migrated CI/CD Pipelines from Jenkins to GitLab CI, improving performance and visibility.
                                                     </>
                                                 ) : point.includes("server error response") ? (
                                                     <>
-                                                        Automated <span className="inline-flex items-center bg-primary/20 text-primary px-2 rounded-full font-semibold mr-1 text-base">Server Error Response</span> with StackStorm, reducing support load.
+                                                        Automated Server Error Response with StackStorm, reducing support load.
                                                     </>
                                                 ) : point.includes("Python tool") ? (
                                                     <>
-                                                        Created <span className="inline-flex items-center bg-primary/20 text-primary px-2 rounded-full font-semibold mr-1 text-base">Python Tool</span> for root cause analysis, earning Intern of the Year award.
+                                                        Created Python Tool for root cause analysis, earning Intern of the Year award.
                                                     </>
                                                 ) : (
                                                     point
