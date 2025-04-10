@@ -10,15 +10,15 @@ body {
 
   /* Match HeroSection background image and gradient overlay */
   background-image:
-    linear-gradient(to bottom right, rgba(128,0,255,0.3), rgba(255,0,128,0.2), rgba(0,128,255,0.3)),
-    url('/placeholder-abstract-bg.jpg');
+    linear-gradient(to bottom right, rgba(128, 0, 255, 0.3), rgba(255, 0, 128, 0.2), rgba(0, 128, 255, 0.3));
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 /* Ensure html and body take full height for layout purposes */
-html, body {
+html,
+body {
   height: 100%;
 }
 
