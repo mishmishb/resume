@@ -1,11 +1,11 @@
 import React from 'react';
-import HeroSection from '@/components/HeroSection';
-import AboutSection from '@/components/AboutSection';
-import ExperienceSection from '@/components/ExperienceSection';
-import SkillsSection from '@/components/SkillsSection';
-import ProjectsAchievementsSection from '@/components/ProjectsAchievementsSection';
-import ContactSection from '@/components/ContactSection';
-import AnimatedSection from '@/components/AnimatedSection'; // Import animation wrapper
+import HeroSection from '@/components/sections/HeroSection';
+import AboutSection from '@/components/sections/AboutSection';
+import ExperienceSection from '@/components/sections/ExperienceSection';
+import SkillsSection from '@/components/sections/SkillsSection';
+import ProjectsAchievementsSection from '@/components/sections/ProjectsAchievementsSection';
+import ContactSection from '@/components/sections/ContactSection';
+import AnimatedSection from '@/components/motion/AnimatedSection'; // Import animation wrapper
 
 export default function Home() {
   return (

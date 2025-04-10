@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google"; // Import Poppins
 import { ThemeProvider } from "next-themes";
-import Navbar from "@/components/Navbar"; // Import Navbar
-import Footer from "@/components/Footer"; // Import Footer
+import Navbar from "@/components/layout/Navbar"; // Import Navbar
+import Footer from "@/components/layout/Footer"; // Import Footer
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next"; // Import SpeedInsights
 import { Analytics } from "@vercel/analytics/react"; // Import Analytics
